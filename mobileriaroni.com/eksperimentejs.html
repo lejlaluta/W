@@ -1,0 +1,74 @@
+<html>
+
+    <head>
+    <title>ARRA Academy - Eksperimente me komponentin Javascript!</title>
+    </head>
+    
+    <body>
+    
+        <!-- sh1: ndryshimi i permbajtjes apo contentit se HTML permes JS -->
+        <h2>1.Si ndryshohet permbajtja ne kuader te HTML permes JS?</h2>
+        <p id="emri_im">Nese ke deshire me e dite autorin e punimit te kesaj faqeje atehere shtyp butonin e meposhtem...</p>
+        <button type="button" onclick="document.getElementById('emri_im').innerHTML ='Autori i punimit te kesaj faqeje eshte ARRA Academy.'">Shfaq Autorin</button>
+        
+        
+        <!-- sh2: ndryshimi i elementit html apo css permes JS -->
+        <h2>2.Si ndryshohet pamja e nje elementi te stilizuar me CSS permes JS?</h2>
+        <p>Pas modulit 02 HTML, CSS, JS &amp; WeBHosting, cili modul pason pas tij dhe sa ore ka ne dispozicion?</p>
+        <p id="fshehur" style="display: none">Pas modulit 02 pason moduli 03 Dizajn Grafik i cili ne dispozicion ka 24 ore!</p>
+        <button type="button" onclick="document.getElementById('fshehur').style.display='block'">Shfaq pergjigjen</button>
+        
+        
+        <!-- sh3 -->
+        <h2>3.Si ekzekutohet nje funksion i thirrur permes skriptes ne html?</h2>
+        <p>ARRA Academy ofron trajnime intenzive ne fushat e teknologjise...</p>
+        <p id="paragraf_ri"></p>
+        <button type="button" onclick="funksioniIm()">Me shume...</button>
+        <script>
+        function funksioniIm() {
+            document.getElementById("paragraf_ri").innerHTML = "...permes nje planprogrami i cili eshte i pershtatshem per te gjithe!"
+        }
+        </script>
+        
+        <!-- sh4: veprimet aritmetikore ne JS + - * / % -->
+        <h2>4.Si behet llogaritja permes operatoreve aritmetikore ne JS?(+ - * / %)</h2>
+        <p>Brenda skriptes ne kod, eshte shkruajtur funksioni i cili ekzekuton rezultatin e nje detyre te thjesht matematikore me shprehjen: 20+10-5=?</p>
+        <p>Rezultati eshte: </p>
+        <p id="rezultati"></p>
+        <script>
+        document.getElementById("rezultati").innerHTML = 20+10-5;
+        </script>
+        
+        
+        <!-- sh5: -->
+        <h2>5.Si ekzekutohet nje paralajmrues(alert/notification) permes JS?</h2>
+        <p>Kodi per te ekzekutuar nje paralajmrues eshte shkruajtur ne pjesen e brendshme te skriptes dhe ekzekutohet automatikisht kur te rifreskohet faqja</p>
+        <script>
+        //window.alert("Afati per trajnimin e radhes do te hapet ne muajin MARS!");
+        </script>
+        
+        <!-- sh6 -->
+        <h2>6.Si perdoren dhe shfrytezohen variablat ne kuader te JS?</h2>
+        <p>Jane krijuar dy variabla ku x = 10-7 dhe y = x * 5 = ?</p>
+        <p id="variablat"></p>
+        <script>
+        //menyra e pare
+            var x, y;
+            /*menyra e dyte
+            var x;
+            var y;
+            */
+            
+            x = 10 - 7; // vlera e x tanime eshte 3 
+            y = x * 5; // vlera e y tanime eshte 15
+            
+            document.getElementById("variablat").innerHTML = y;
+            
+        </script>
+        
+        <!-- sh7 -->
+        <h2>7.Si mund te printohet komplet pamja e faqes aktuale permes JS?</h2>
+        <button type="button" onclick="window.print()">Printo faqen</button>
+    </body>
+    
+</html>
